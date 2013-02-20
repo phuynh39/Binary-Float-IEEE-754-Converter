@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Binary-Floating Converter</string>
+    <string name="text_0">32 Bits Binary</string>
+    <string name="text_1">Hex </string>
+    <string name="text_2">Sign Bit</string>
+    <string name="text_3">Exponent Bits</string>
+    <string name="text_4">Mantissa Bits</string>
+    <string name="hint_1">Enter a number</string>
+    <string name="hint_2">Enter a 32 bits binary number</string>
+    <string name="hint_3">Enter a hex number</string>
+    <string name="button_text_1">Convert</string>
+    <string name="button_text_2">Clear</string>
+    <string name="menu_settings">Settings</string>
+    
+    <string-array name="converters">
+        <item>1\'s Complement 32 Bits Binary </item>
+        <item>2\'s Complement 32 Bits Binary </item>
+        <item>Single Floating Point IEEE 754 Standard</item>
+    </string-array>
+
+</resources>

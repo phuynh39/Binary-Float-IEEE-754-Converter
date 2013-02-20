@@ -1,0 +1,170 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <Spinner
+            android:id="@+id/converters"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:background="#7a0453"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/converters" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#d94625" >
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="0,1" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/clear_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_text_2" />
+
+                <Button
+                    android:id="@+id/convert_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_text_1" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/input_1_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#f49956"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:hint="@string/hint_1"
+            android:maxLength="18"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/input_2_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_0"
+            android:textColor="#f49956"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/binary_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:hint="@string/hint_2"
+            android:inputType="number"
+            android:maxLength="35"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/input_3_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_1"
+            android:textColor="#f49956"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/hex_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:hint="@string/hint_3"
+            android:maxLength="8"
+            android:textSize="14sp" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:stretchColumns="1" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:text="@string/text_2"
+                    android:textColor="#65a5cc" />
+
+                <EditText
+                    android:id="@+id/sign_bit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:editable="false"
+                    android:inputType="none"
+                    android:textColor="#eb0258"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:text="@string/text_3"
+                    android:textColor="#65a5cc" />
+
+                <EditText
+                    android:id="@+id/exponent_bits"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:editable="false"
+                    android:inputType="none"
+                    android:textColor="#eb0258"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:text="@string/text_4"
+                    android:textColor="#65a5cc" />
+
+                <EditText
+                    android:id="@+id/mantissa_bits"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:editable="false"
+                    android:inputType="none"
+                    android:textColor="#eb0258"
+                    android:textSize="14sp" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</ScrollView>
